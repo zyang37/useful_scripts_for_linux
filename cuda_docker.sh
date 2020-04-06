@@ -1,7 +1,7 @@
 #!/bin/bash
 
 run="run"
-bash="back"
+bash="bash"
 remove="rm"
 fix_gpu_error="setup"
 

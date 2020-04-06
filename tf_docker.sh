@@ -1,12 +1,12 @@
 #!/bin/bash
 
 run="run"
-bash="back"
+bash="bash"
 remove="rm"
 fix_gpu_error="setup"
 
 if [ "$1" = "$run" ]; then
-  sudo docker run --gpus all -it --name tf -v /home/yang/Documents:/home tensorflow/tensorflow:latest-gpu-py3 bash
+  sudo docker run --gpus all -it --name tf -v /home/yang/Documents:/home tensorflow/tensorflow:1.14.0-gpu-py3 bash
 elif [ "$1" = "$bash" ]; then
   sudo docker start tf
   sudo docker exec -it tf bash
