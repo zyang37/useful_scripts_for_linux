@@ -5,6 +5,10 @@ bash="bash"
 remove="rm"
 fix_gpu_error="setup"
 
+# run on gpu
+# named tf
+# acess to webcam
+# python3
 if [ "$1" = "$run" ]; then
   xhost +local:docker
   sudo docker run \
