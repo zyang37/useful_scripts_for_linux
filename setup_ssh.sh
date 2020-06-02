@@ -24,3 +24,10 @@ sudo ufw allow ssh
 
 # get public ip address
 # https://ifconfig.co/ip
+
+####### ssh key #######
+# Windows linux subsystem
+# ssh-keygen
+# create config
+# chmod 600 .ssh/config
+# ssh host
