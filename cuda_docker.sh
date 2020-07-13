@@ -6,7 +6,12 @@ remove="rm"
 fix_gpu_error="setup"
 
 if [ "$1" = "$run" ]; then
-  sudo docker run --gpus all -it --name cuda -v /home/yang/Documents:/home nvidia/cuda bash
+  sudo docker run --gpus all -it --name cuda \
+    --device=/dev/video0:/dev/video0 \
+    -v /home/yang/Documents:/home \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e DISPLAY=unix$DISPLAY \
+    nvidia/cuda:latest bash
 elif [ "$1" = "$bash" ]; then
   sudo docker start cuda
   sudo docker exec -it cuda bash
