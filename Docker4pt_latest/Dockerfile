@@ -1,5 +1,5 @@
 # FAIL!!!!!!!!
-FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
+FROM nvcr.io/nvidia/pytorch:20.12-py3
 
 ENV DEBIAN_FRONTEND=nonintercative
 
@@ -25,4 +25,3 @@ RUN echo "zyang37:x:26388:3944:Zhenning Yang,620,,:/home/zyang37:/bin/bash" >> /
 
 WORKDIR "/root"
 CMD ["/bin/bash"]
-
