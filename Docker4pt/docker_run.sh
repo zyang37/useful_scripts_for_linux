@@ -4,7 +4,7 @@ run="run"
 bash="bash"
 remove="rm"
 
-name="cct-nb"
+name="pt-nb"
 #image="tensorflow/tensorflow:latest-gpu-py3-jupyter"
 image="cct"
 
