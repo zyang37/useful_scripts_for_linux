@@ -1,5 +1,4 @@
-# Windows Subsystem for Linux Setup Instruction
-Instructions for running graphical python applications on Windows using WSL2.
+# Instructions for running graphical python applications on Windows 10.
 
 ### Step 1 (Enable WSL)
 1. Go to Control Pannel -> Programs -> Program and Features
