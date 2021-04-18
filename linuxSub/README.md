@@ -61,7 +61,9 @@ xeyes
 ```
 
 ### Step 6 (sshd conifg, not sure if this help)
-1. ```vim /etc/ssh/sshd_config``` uncomment X11UseLocalhost yes
+1. ```vim /etc/ssh/sshd_config```
+  - uncomment X11UseLocalhost yes
+  - uncomment X11Forwarding yes
 2. Control Panel > System and Security > Windows Defender Firewall > Advanced Settings > Inbound Rules > New Rule... > port > set 22 > Allow the connection > checked Domain/Private/Public > Named and Confirmed Rule.
 
 
