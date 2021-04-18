@@ -53,10 +53,10 @@ Windows needs a X server to support graphical applications.
 
 ### Step 6 (export DISPLAY)
 1. See instructions in **x11_setup.sh**. You can run ``` bash x11_setup.sh ``` to export DISPLAY (host ip will change if you login remotely)
-2. Sometimes, after running **x11_setup.sh**, the app will hang. In that case, you need to manually export DISPLAY. Then re-run X server.
+2. Sometimes, after running **x11_setup.sh**, the app will hang. In that case, you need to re-run X server, ``` cat /etc/resolv.conf ```, then manually export DISPLAY.
 
 ```
-export DISPLAY="ip_from_/etc/resolv.conf":0
+export DISPLAY="nameserver_from_/etc/resolv.conf":0
 ```
 
 3. You can test it with some simple x11 apps, by running the following.
