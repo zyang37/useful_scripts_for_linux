@@ -12,6 +12,7 @@ image="pt-z"
 if [ "$1" = "$run" ]; then
   docker run --gpus all -it \
 	-p 8889:8889 \
+	-p 6007:6006 \
 	-v /home/zyang37/:/home/zyang37/ \
 	-v /da2_data/shared/twitter/:/da2_data/shared/twitter/ \
 	-v /home/mousavi:/home/mousavi \
