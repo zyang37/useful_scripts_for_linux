@@ -1,5 +1,5 @@
 # FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
-FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-runtime
+FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-runtime
 
 ENV DEBIAN_FRONTEND=nonintercative
 
@@ -21,7 +21,12 @@ RUN pip install opencv-python
 RUN pip install scipy
 RUN pip install tqdm 
 RUN pip install matplotlib
+RUN pip install pandas
 
+RUn pip install --upgrade jupyter_client
+RUN pip install ipywidgets
+RUN jupyter nbextension enable --py widgetsnbextension
+# RUN pip install torchvision -U
 
 RUN echo "mousavi:x:4477:" >> /etc/group
 RUN echo "mousavi:x:25044:4477:Sara Mousavi,620,,:/home/mousavi:/bin/bash" >> /etc/passwd
