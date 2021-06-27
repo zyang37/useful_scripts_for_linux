@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t pt
+docker build . -t pt-z
