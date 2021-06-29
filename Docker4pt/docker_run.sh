@@ -10,7 +10,7 @@ image="pt-z"
 #-u $(id -u ${USER}):$(id -g ${USER}) \
 
 if [ "$1" = "$run" ]; then
-  docker run --gpus all -it \
+  docker run --gpus all -it --ipc=host \
 	-p 8889:8888 \
 	-p 6007:6006 \
 	-v /home/zyang37/:/home/zyang37/ \
