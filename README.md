@@ -8,6 +8,7 @@ A collection of useful scripts range from installing apps, setting up docker, or
 
 Inside the container
 - Two active ports: 8888 and 6006 (when running Jupiter notebook and tensorboard, can use their default ports inside the container)
+- NOTE: Just run tensorboard and Jupiter notebook on their default port, and will be redirected (see **outside the container**)
 
 Outside the container
 - Redirect to ports 8888 and 8889 for Jupiter notebook
