@@ -26,6 +26,7 @@ RUN pip install pandas
 RUn pip install --upgrade jupyter_client
 RUN pip install ipywidgets
 RUN jupyter nbextension enable --py widgetsnbextension
+RUN pip install jupyterlab
 # RUN pip install torchvision -U
 
 RUN echo "mousavi:x:4477:" >> /etc/group
