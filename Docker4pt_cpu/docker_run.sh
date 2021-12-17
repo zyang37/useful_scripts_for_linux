@@ -22,7 +22,7 @@ if [ "$1" = "$run" ]; then
 	-v /da1_data:/da1_data \
 	-v /data:/data \
 	-v /usb:/usb \
-	--name "$name" --link dbNew:dbNew \
+	--name "$name" \
 	"$image" \
 	/bin/bash
 
