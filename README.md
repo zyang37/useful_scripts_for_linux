@@ -13,3 +13,7 @@ Inside the container
 Outside the container
 - Redirect to ports 8888 and 8889 for Jupiter notebook
 - Redirect to ports 6006 and 6007 for tensorboard
+
+
+## Fun add-ons for your terminal
+- [weather] https://github.com/chubin/wttr.in
