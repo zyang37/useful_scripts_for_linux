@@ -1,4 +1,5 @@
-FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
+#FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
+FROM tensorflow/tensorflow:latest-gpu-jupyter
 
 ENV DEBIAN_FRONTEND=nonintercative
 
@@ -17,6 +18,9 @@ RUN echo "mousavi:x:25044:4477:Sara Mousavi,620,,:/home/mousavi:/bin/bash" >> /e
 
 RUN echo "zyang37:x:3944:" >> /etc/group
 RUN echo "zyang37:x:26388:3944:Zhenning Yang,620,,:/home/zyang37:/bin/bash" >> /etc/passwd
+
+RUN echo "anau:x:5791:" >> /etc/group
+RUN echo "anau:x:23948:5791:Anna-Maria Nau,620,,:/home/anau:/bin/bash" >> /etc/passwd
 
 WORKDIR "/root"
 CMD ["/bin/bash"]
