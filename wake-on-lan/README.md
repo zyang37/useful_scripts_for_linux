@@ -60,6 +60,12 @@ Restart the server.
 
 ### 5. Enable Wake-on-LAN in BIOS. Hold F10, this navigates to BIOS settings and enable Wake-on-LAN. Restart the server.
 
+### 6. Getting server information (IP, mask and broadcast)
+```
+sudo apt-get install net-tools
+
+sudo ifconfig
+```
 
 ## Client side
 ### 1. Install `wakeonlan`
